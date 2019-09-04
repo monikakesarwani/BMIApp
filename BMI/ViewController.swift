@@ -22,12 +22,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var displayBMILbl: UILabel!
     
+    @IBOutlet weak var goButtonLbl: UIButton!
     
     
     // function for calculating BMI and return answere in string
     
     func bmiCalcImperialUnits(weightInPounds : Double, heightInFeet: Double, remainderInches: Double) -> String
     {
+       
+        
+//        if heightInFeet == nil{
+//            return "Fill right informations"
+//        }
+        
         var interpretation = ""
         
         let weightInKg = weightInPounds * 0.45359237
@@ -39,6 +46,7 @@ class ViewController: UIViewController {
         let bmi = weightInKg / pow(heightInMeters, 2)
         
         let shortenedBmi = String(format: "%.2f", bmi)
+        
         
         
         if bmi > 25{
@@ -68,6 +76,7 @@ class ViewController: UIViewController {
         
         //hidding  label when loading view first time
         displayBMILbl.isHidden = true
+        
     }
 
 
@@ -91,15 +100,12 @@ class ViewController: UIViewController {
        // print(weightInPound!)
       
         
-       
-        
         // calling function and passing the all created constants at parameters places
       
         let bmiResult  = bmiCalcImperialUnits(weightInPounds: weightInPound, heightInFeet: heightInFeet, remainderInches: heightInInches)
 
         displayBMILbl.text! = String(bmiResult)
         //print(bmi)
-        
         
         
            

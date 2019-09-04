@@ -35,12 +35,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="rit-ix-LjY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwE-S4-bXF">
-                                <rect key="frame" x="124" y="498" width="202" height="30"/>
+                                <rect key="frame" x="124" y="492" width="202" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Go!"/>
                                 <connections>
                                     <action selector="goButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDG-nk-QGH"/>
@@ -53,7 +54,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FyS-oE-YnM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="199" id="7wp-ig-dNW"/>
                             <constraint firstItem="EwE-S4-bXF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="8Gb-0u-McB"/>
@@ -75,6 +76,7 @@
                     </view>
                     <connections>
                         <outlet property="displayBMILbl" destination="Na9-H3-Gsa" id="ZuZ-ZO-zGf"/>
+                        <outlet property="goButtonLbl" destination="EwE-S4-bXF" id="Sgd-4z-8RU"/>
                         <outlet property="heightInFeetTxt" destination="FyS-oE-YnM" id="9AX-b0-5U2"/>
                         <outlet property="heightInInchesTxt" destination="Quv-tz-2LJ" id="qxE-FG-CpD"/>
                         <outlet property="weightInPoundTxt" destination="S4x-Af-Vfs" id="MYs-bL-lbn"/>
